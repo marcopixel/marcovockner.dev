@@ -26,7 +26,7 @@ function init() {
   camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 1, 10000);
   camera.position.x = 75;
   camera.position.z = 250;
-  camera.position.y = 400;
+  camera.position.y = 375;
   camera.rotation.x = -40 * Math.PI / 180;
 
   scene = new THREE.Scene();
@@ -37,13 +37,13 @@ function init() {
 
   var material = new THREE.SpriteCanvasMaterial({
 
-    color: 0xED1C5B,
+    color: 0x03E5AD,
     program: function(context) {
 
       context.beginPath();
       context.arc(0.5, 0, 0.15, PI2, 0.1, true);
       context.shadowBlur = 0;
-      context.shadowColor = "#ED1C5B";
+      context.shadowColor = "#03E5AD";
       context.fill();
 
     }
