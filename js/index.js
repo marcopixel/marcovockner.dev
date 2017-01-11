@@ -19,9 +19,8 @@ animate();
 
 function init() {
 
-  container = document.createElement('div');
-  container.id = CONTAINERID;
-  document.body.appendChild(container);
+  container = document.getElementById( 'canvas' );
+  document.body.appendChild( container );
 
   camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 1, 10000);
   camera.position.x = 75;
@@ -37,13 +36,15 @@ function init() {
 
   var material = new THREE.SpriteCanvasMaterial({
 
-    color: 0x03E5AD,
+    color: 0x03C696,
+	transparent: true, 
+	opacity: 0.3,
     program: function(context) {
 
       context.beginPath();
       context.arc(0.5, 0, 0.15, PI2, 0.1, true);
       context.shadowBlur = 0;
-      context.shadowColor = "#03E5AD";
+      context.shadowColor = "#03C696";
       context.fill();
 
     }
