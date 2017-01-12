@@ -14,11 +14,12 @@ div#canvas{
 	background-color: #17193F;
 	z-index: -1;
 	}
-	
+
 #main-container {
   display:-webkit-flex;
   display:flex;
   height: 100%;
+  text-align: center;
 }
 
 .vertical-center {
@@ -30,9 +31,9 @@ div#canvas{
 }
 h1 {
 	font-weight: 200;
-	font-size: 6em;
+	font-size: 6.5vw;
 	color: #03E5AD;
-	margin-bottom: 30px;
+	margin-bottom: 2vw;
 }
 .name {font-family: 'Karla', sans-serif;}
 .vertical-divider {
@@ -41,10 +42,10 @@ h1 {
     border:1px solid black;
 }
 .social {
-	font-size: 3em;
+	font-size: 3vw;
 	display: flex;
     justify-content: center;
-    align-items: center;	
+    align-items: center;
 }
 .social a {
 	text-decoration: none;
@@ -61,5 +62,5 @@ h1 {
   stroke-width: 0;
   stroke: #03E5AD;
   fill: #03E5AD;
-  padding: 15px 45px 0px 45px;
+  padding: 1vh 2.5vw;
 }
