@@ -11,7 +11,8 @@ div#canvas{
 	height: 100%;
 	overflow: hidden;
 	overflow-y: hidden;
-	background-color: #17193F;
+	background: url(../img/bg.jpg);
+	background-size:cover;
 	z-index: -1;
 	}
 
@@ -32,7 +33,7 @@ div#canvas{
 h1 {
 	font-weight: 200;
 	font-size: 6.5vw;
-	color: #03E5AD;
+	color: #FFFFFF;
 	margin-bottom: 2vw;
 }
 .name {font-family: 'Karla', sans-serif;}
@@ -60,7 +61,7 @@ h1 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
-  stroke: #03E5AD;
-  fill: #03E5AD;
+  stroke: #FFFFFF;
+  fill: #FFFFFF;
   padding: 1vh 2.5vw;
 }

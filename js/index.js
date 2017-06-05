@@ -36,9 +36,9 @@ function init() {
 
   var material = new THREE.SpriteCanvasMaterial({
 
-    color: 0x03C696,
+    color: 0xFFFFFF,
 	transparent: true, 
-	opacity: 0.3,
+	opacity: 0.5,
     program: function(context) {
 
       context.beginPath();
