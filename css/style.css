@@ -3,7 +3,9 @@ html, body {
   height: 100%;
   margin: 0px;
 font-family: 'Muli', sans-serif;
-background-color: #02bfc1;
+}
+body {
+	background-color: #02bfc1;
 }
 div#canvas{
 	top: 0;
@@ -22,6 +24,7 @@ div#canvas{
   display:flex;
   height: 100%;
   text-align: center;
+  	z-index: 1;
 }
 
 .vertical-center {
