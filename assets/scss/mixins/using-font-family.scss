@@ -1,0 +1,9 @@
+@mixin using-font-family($font: null) {
+  @if $font {
+    font-family: $font, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif,
+      Apple Color Emoji, Segoe UI Emoji;
+  } @else {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif,
+      Apple Color Emoji, Segoe UI Emoji;
+  }
+}

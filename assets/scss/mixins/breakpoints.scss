@@ -1,0 +1,8 @@
+@mixin breakpoint($selection) {
+  // check if map has breakpoint key
+  @if map-has-key($breakpoints, $selection) {
+    @media screen and (min-width: #{map-get($breakpoints, $selection)}) {
+      @content;
+    }
+  }
+}

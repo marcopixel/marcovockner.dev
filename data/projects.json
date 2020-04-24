@@ -1,0 +1,28 @@
+[
+  {
+    "key": "r6operators",
+    "name": "r6operators",
+    "description": "r6operators is a collection of high-quality vectorized Rainbow Six: Siege operator icons & metadata for Node.js",
+    "website": "https://r6operators.marcopixel.eu/",
+    "language": "Typescript + React",
+    "github": {
+      "owner": "marcopixel",
+      "repo": "r6operators"
+    },
+    "preview": {
+      "src": "/images/r6operators_preview.png",
+      "alt": "r6operators Preview image"
+    }
+  },
+  {
+    "key": "monstercat",
+    "name": "Monstercat Visualizer",
+    "description": "Realtime desktop audio visualizer for Rainmeter, based on the design of the Monstercat Youtube channel.",
+    "website": "https://test.com",
+    "language": "Rainmeter",
+    "github": {
+      "owner": "marcopixel",
+      "repo": "Monstercat-Visualizer"
+    }
+  }
+]
