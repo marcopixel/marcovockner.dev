@@ -12,8 +12,8 @@
             .project-card__stats__placeholder(v-if="isLoading || hasError" :class="{ error: hasError }")
           transition(name="fade")
             ProjectCardValue(v-if="!isLoading && !hasError" icon="star" :value="stars")
-          transition(name="fade")
-            ProjectCardValue(v-if="!isLoading && !hasError" icon="code-branch" :value="forks")
+          //- transition(name="fade")
+          //-   ProjectCardValue(v-if="!isLoading && !hasError" icon="code-branch" :value="forks")
 
 </template>
 
