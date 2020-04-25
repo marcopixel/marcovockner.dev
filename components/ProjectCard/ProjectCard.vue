@@ -1,5 +1,5 @@
 <template lang="pug">
-  .project-card
+  a.project-card(:href="project.website")
     .project-card__image(v-if="project.preview")
       img(:src="project.preview.src" :alt="project.preview.alt")
     .project-card__content
@@ -77,8 +77,12 @@ export default {
 
 <style lang="scss">
 .project-card {
+  display: flex;
+  flex-direction: column;
+  color: $color-text-primary;
   background: lighten($color-background, 4%);
   margin-bottom: 2rem;
+  text-decoration: none;
   transition-duration: 200ms;
   transition-property: opacity, transform;
 
