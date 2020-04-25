@@ -18,11 +18,22 @@
     "key": "monstercat",
     "name": "Monstercat Visualizer",
     "description": "Realtime desktop audio visualizer for Rainmeter, based on the design of the Monstercat Youtube channel.",
-    "website": "https://test.com",
+    "website": "https://github.com/marcopixel/Monstercat-Visualizer",
     "language": "Rainmeter",
     "github": {
       "owner": "marcopixel",
       "repo": "Monstercat-Visualizer"
+    }
+  },
+  {
+    "key": "sysdash",
+    "name": "SysDash",
+    "description": "A simple and clean system monitoring skin for Rainmeter.",
+    "website": "https://github.com/marcopixel/SysDash",
+    "language": "Rainmeter",
+    "github": {
+      "owner": "marcopixel",
+      "repo": "SysDash"
     }
   }
 ]
