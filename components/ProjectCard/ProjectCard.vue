@@ -92,7 +92,11 @@ export default {
 
   &__image {
     background: rgba(0, 0, 0, 0.1);
-    height: 200px;
+    height: 150px;
+
+    @include breakpoint(m) {
+      height: 200px;
+    }
 
     img {
       height: 100%;
@@ -104,21 +108,35 @@ export default {
 
   &__header {
     color: $color-text-accent;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 400;
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+
+    @include breakpoint(m) {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
   }
 
   &__content {
     padding: 2rem;
     line-height: 1.5;
+    font-size: 0.9rem;
+
+    @include breakpoint(m) {
+      font-size: 1rem;
+    }
   }
 
   &__footer {
     align-items: center;
     display: flex;
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
+
+    @include breakpoint(m) {
+      margin-top: 2.5rem;
+    }
   }
 
   &__language {

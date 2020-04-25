@@ -12,9 +12,10 @@ export default {}
 @import "~assets/scss/base";
 
 .layout-default {
-  margin: 0 auto;
+  margin: 1rem;
 
   @include breakpoint(l) {
+    margin: 0 auto;
     max-width: 1200px;
   }
 }
