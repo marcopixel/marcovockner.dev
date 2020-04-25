@@ -81,7 +81,7 @@ export default {
   flex-direction: column;
   color: $color-text-primary;
   background: lighten($color-background, 4%);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-decoration: none;
   transition-duration: 200ms;
   transition-property: opacity, transform;
@@ -107,10 +107,11 @@ export default {
     font-size: 1.4rem;
     font-weight: 400;
     margin-top: 0;
+    margin-bottom: 1rem;
   }
 
   &__content {
-    padding: 2.5rem 2rem;
+    padding: 2rem;
     line-height: 1.5;
   }
 
