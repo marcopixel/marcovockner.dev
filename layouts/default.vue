@@ -15,8 +15,12 @@ export default {}
   margin: 1rem;
 
   @include breakpoint(l) {
+    margin: 0;
+  }
+
+  @include breakpoint(xl) {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
   }
 }
 </style>

@@ -27,12 +27,36 @@ export default {
 <style lang="scss" scoped>
 .page-index {
   &__container {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 4rem 0;
+    position: relative;
 
-    @include breakpoint(l) {
-      grid-template-columns: 2fr 3fr;
+    &--left {
+      box-sizing: border-box;
+      padding-bottom: 3rem;
+
+      @include breakpoint(l) {
+        position: fixed;
+        width: 40%;
+        height: 100%;
+        padding: 3rem;
+      }
+
+      @include breakpoint(xl) {
+        width: 600px;
+      }
+    }
+    &--right {
+      box-sizing: border-box;
+
+      @include breakpoint(l) {
+        position: absolute;
+        width: 60%;
+        right: 0;
+        padding: 3rem;
+      }
+
+      @include breakpoint(xl) {
+        width: 800px;
+      }
     }
   }
 
