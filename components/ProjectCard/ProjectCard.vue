@@ -125,11 +125,12 @@ export default {
   }
 
   &__content {
-    padding: 2rem;
+    padding: 1.5rem;
     line-height: 1.5;
     font-size: 0.9rem;
 
     @include breakpoint(m) {
+      padding: 2rem;
       font-size: 1rem;
     }
   }

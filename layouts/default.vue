@@ -12,7 +12,7 @@ export default {}
 @import "~assets/scss/base";
 
 .layout-default {
-  margin: 1rem;
+  margin: 1.5rem;
 
   @include breakpoint(l) {
     margin: 0;

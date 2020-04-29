@@ -46,7 +46,9 @@ export default {
         position: fixed;
         width: 40%;
         height: 100%;
-        padding: 5rem 3rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        padding-left: 3rem;
       }
 
       @include breakpoint(xl) {
