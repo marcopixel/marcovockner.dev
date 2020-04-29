@@ -2,7 +2,12 @@
 .page-index
   .page-index__container
     .page-index__container--left
-      h1 Hello world!
+      .page-index__intro
+        Introduction
+      ul.page-index__social
+        SocialLink(href="https://twitter.com/marcovockner" label="Twitter" :icon="['fab', 'twitter']")
+        SocialLink(href="https://github.com/marcopixel" label="Github" :icon="['fab', 'github']")
+        SocialLink(href="https://www.reddit.com/user/marcopixel" label="Reddit" :icon="['fab', 'reddit']")
     .page-index__container--right
       .page-index__projects
         ProjectCard(v-for="project in projects" :key="project.key" :project="project")
@@ -15,6 +20,8 @@ export default {
   name: "PageIndex",
   components: {
     ProjectCard: () => import("@/components/ProjectCard/ProjectCard.vue"),
+    Introduction: () => import("@/components/Introduction/Introduction.vue"),
+    SocialLink: () => import("@/components/SocialLink/SocialLink.vue"),
   },
   data() {
     return {
@@ -30,6 +37,8 @@ export default {
     position: relative;
 
     &--left {
+      display: flex;
+      flex-direction: column;
       box-sizing: border-box;
       padding-bottom: 3rem;
 
@@ -37,7 +46,7 @@ export default {
         position: fixed;
         width: 40%;
         height: 100%;
-        padding: 3rem;
+        padding: 5rem 3rem;
       }
 
       @include breakpoint(xl) {
@@ -51,13 +60,24 @@ export default {
         position: absolute;
         width: 60%;
         right: 0;
-        padding: 3rem;
+        padding: 5rem 3rem;
       }
 
       @include breakpoint(xl) {
         width: 800px;
       }
     }
+  }
+
+  &__intro {
+    flex-grow: 1;
+  }
+
+  &__social {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   &__projects {

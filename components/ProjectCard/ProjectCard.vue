@@ -79,8 +79,8 @@ export default {
 .project-card {
   display: flex;
   flex-direction: column;
-  color: $color-text-primary;
-  background: lighten($color-background, 4%);
+  color: lighten($color-text-primary, 20%);
+  background: lighten($color-background, 6%);
   margin-bottom: 1rem;
   text-decoration: none;
   transition-duration: 200ms;
@@ -88,6 +88,11 @@ export default {
 
   @include hover-focus-active() {
     transform: scale(1.02);
+    color: lighten($color-text-primary, 20%);
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
   }
 
   &__image {
