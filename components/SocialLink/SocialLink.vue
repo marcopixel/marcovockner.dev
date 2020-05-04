@@ -29,14 +29,20 @@ export default {
 
 <style lang="scss" scoped>
 .social-link {
+  color: lighten($color-text-primary, 10%);
   margin-right: 2rem;
   transition: 100ms transform;
+
+  @include hover-focus-active() {
+    color: #fff;
+  }
 
   &:last-child {
     margin-right: 0;
   }
 
   a {
+    color: inherit;
     display: flex;
     align-items: center;
   }
