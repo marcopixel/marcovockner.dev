@@ -19,7 +19,7 @@ interface NuxtConfigurationFontAwesomeStylesSet {
 const fontawesome: NuxtConfigurationFontAwesome = {
   icons: {
     solid: ["faStar", "faCodeBranch"],
-    brands: ["faTwitter", "faGithub", "faReddit"],
+    brands: ["faTwitter", "faGithub", "faRedditAlien"],
   },
 }
 

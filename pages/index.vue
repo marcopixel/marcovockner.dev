@@ -7,7 +7,7 @@
       ul.page-index__social
         SocialLink(href="https://twitter.com/marcovockner" label="Twitter" :icon="['fab', 'twitter']")
         SocialLink(href="https://github.com/marcopixel" label="Github" :icon="['fab', 'github']")
-        SocialLink(href="https://www.reddit.com/user/marcopixel" label="Reddit" :icon="['fab', 'reddit']")
+        SocialLink(href="https://www.reddit.com/user/marcopixel" label="Reddit" :icon="['fab', 'reddit-alien']")
     .page-index__container--right
       .page-index__projects
         ProjectCard(v-for="project in projects" :key="project.key" :project="project")
