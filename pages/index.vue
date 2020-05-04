@@ -77,9 +77,16 @@ export default {
 
   &__social {
     display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    line-height: 1.5;
     list-style: none;
     padding: 0;
     margin: 0;
+
+    @include breakpoint(m) {
+      font-size: 1.1rem;
+    }
   }
 
   &__projects {

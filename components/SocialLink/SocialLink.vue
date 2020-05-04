@@ -52,7 +52,7 @@ export default {
   }
 
   svg {
-    margin-right: 0.8rem;
+    margin-right: 1rem;
   }
 }
 </style>

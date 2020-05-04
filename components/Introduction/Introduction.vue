@@ -22,6 +22,7 @@ export default {}
 
     @include breakpoint(l) {
       font-size: 4rem;
+      margin-top: 0;
       margin-bottom: 3rem;
     }
 
