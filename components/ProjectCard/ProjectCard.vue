@@ -96,8 +96,10 @@ export default {
   }
 
   &__image {
+    position: relative;
     background: rgba(0, 0, 0, 0.1);
     height: 150px;
+    overflow: hidden;
 
     @include breakpoint(m) {
       height: 200px;
@@ -108,6 +110,16 @@ export default {
       object-fit: cover;
       object-position: 50% 20%;
       width: 100%;
+
+      // ie workaround
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: auto;
+        min-height: 100%;
+        transform: translate(-50%, -50%);
+      }
     }
   }
 
