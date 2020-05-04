@@ -1,8 +1,9 @@
 <template lang="pug">
   .introduction
-    h1.introduction__header Hi, I'm #[em Marco.]
+    h1.introduction__header Hi, I'm #[br] #[em Marco Vockner.]
     .introduction__text
       p I'm a Front-End Developer/Designer living in Austria who loves to create stuff for people to enjoy.#[br]
+      p I love working with #[a(href="https://www.typescriptlang.org/") Typescript] & #[a(href="https://reactjs.org/") React] and recently started with #[a(href="https://vuejs.org/") Vue.js], which i simply adore because it's simplicity & ease of use.
 </template>
 
 <script lang="ts">
