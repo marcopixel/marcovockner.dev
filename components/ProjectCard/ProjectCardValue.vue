@@ -12,7 +12,7 @@ export default {
       required: true,
     },
     icon: {
-      type: String,
+      type: [String, Array],
       required: true,
     },
   },
