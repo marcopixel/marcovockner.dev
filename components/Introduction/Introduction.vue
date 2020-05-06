@@ -22,9 +22,13 @@ export default {}
     margin-bottom: 2rem;
 
     @include breakpoint(l) {
-      font-size: 4rem;
+      font-size: 3rem;
       margin-top: 0;
       margin-bottom: 3rem;
+    }
+
+    @include breakpoint(xl) {
+      font-size: 4rem;
     }
 
     em {
