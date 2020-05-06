@@ -4,6 +4,8 @@
     .page-index__container--left
       .page-index__intro
         Introduction
+      ul.page-index__social.page-index__social--mail
+        SocialLink(href="mailto:me@marcovockner.dev" label="me@marcovockner.dev" :icon="['fas', 'envelope']")
       ul.page-index__social
         SocialLink(href="https://twitter.com/marcovockner" label="Twitter" :icon="['fab', 'twitter']")
         SocialLink(href="https://github.com/marcopixel" label="Github" :icon="['fab', 'github']")
@@ -86,6 +88,10 @@ export default {
 
     @include breakpoint(m) {
       font-size: 1.1rem;
+    }
+
+    &--mail {
+      margin-bottom: 1rem;
     }
   }
 
