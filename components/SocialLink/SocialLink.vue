@@ -1,6 +1,6 @@
 <template lang="pug">
 li.social-link
-  a(:href="href" target="_blank")
+  a(:href="href" target="_blank" rel="noopener")
     FontAwesomeIcon(v-if="icon" :icon="icon")
     span {{ label }}
 </template>
