@@ -37,6 +37,7 @@ const head: NuxtConfigurationHead = {
   ],
   link: [
     { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+    { rel: "preconnect", href: "https://api.github.com" },
     {
       rel: "stylesheet",
       href: "https://fonts.googleapis.com/css?family=Jost:400,600&display=swap",
