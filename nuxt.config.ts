@@ -4,6 +4,7 @@ import modules from "./config/modules"
 import plugins from "./config/plugins"
 import fontawesome from "./config/fontawesome"
 import styleResources from "./config/styleresources"
+import optimizedImages from "./config/optimizedImages"
 
 export default {
   mode: "spa",
@@ -13,4 +14,5 @@ export default {
   plugins,
   fontawesome,
   styleResources,
+  optimizedImages,
 }
