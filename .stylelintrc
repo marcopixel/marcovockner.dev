@@ -9,6 +9,7 @@
     "prettier/prettier": true,
     "color-named": "never",
     "max-nesting-depth": 3,
-    "order/properties-alphabetical-order": null
+    "order/properties-alphabetical-order": null,
+    "selector-no-qualifying-type": null
   }
 }
