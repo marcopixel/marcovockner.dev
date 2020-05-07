@@ -1,7 +1,7 @@
 <template lang="pug">
   a.project-card(:href="project.website")
     .project-card__image(v-if="project.preview")
-      img(:src="project.preview.src" :alt="project.preview.alt")
+      img(:src="project.preview.src" :alt="project.preview.alt" :style="position")
     .project-card__content
       h3.project-card__header {{ project.name }}
       span.project-card__description {{ project.description }}
@@ -43,6 +43,11 @@ export default {
   },
 
   computed: {
+    position() {
+      return `object-position: ${
+        this.project.preview.position ? this.project.preview.position : "50% 50%"
+      }`
+    },
     github() {
       return this.$store.state.github.find((i) => i.key === this.project.key)
     },
@@ -108,7 +113,6 @@ export default {
     img {
       height: 100%;
       object-fit: cover;
-      object-position: 50% 20%;
       width: 100%;
 
       // ie workaround

@@ -11,7 +11,8 @@
     },
     "preview": {
       "src": "/images/r6operators_preview.png",
-      "alt": "r6operators Preview image"
+      "alt": "r6operators Preview image",
+      "position": "50% 40%"
     }
   },
   {
