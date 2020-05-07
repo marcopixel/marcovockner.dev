@@ -1,7 +1,9 @@
 <template lang="pug">
   a.project-card(:href="project.website")
     .project-card__image(v-if="project.preview")
-      img(:src="image" :alt="project.preview.alt" :style="position")
+      picture
+        source(:srcSet="require(`~/assets/${this.project.preview.src}`)" type="image/jpeg")
+        img(:src="require(`~/assets/${this.project.preview.src}`)" :alt="project.preview.alt" :style="position")
     .project-card__content
       h3.project-card__header {{ project.name }}
       span.project-card__description {{ project.description }}
@@ -47,9 +49,6 @@ export default {
       return `object-position: ${
         this.project.preview.position ? this.project.preview.position : "50% 50%"
       }`
-    },
-    image() {
-      return require(`~/assets/${this.project.preview.src}`)
     },
     github() {
       return this.$store.state.github.find((i) => i.key === this.project.key)

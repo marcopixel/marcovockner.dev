@@ -6,6 +6,7 @@ const buildModules: NuxtConfigurationModule[] = [
   "@nuxtjs/stylelint-module",
   "@nuxtjs/moment",
   "@nuxtjs/fontawesome",
+  "@aceforth/nuxt-optimized-images",
 ]
 
 export default buildModules
