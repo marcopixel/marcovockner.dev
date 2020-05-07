@@ -135,19 +135,20 @@ export default {
     margin-bottom: 0.5rem;
 
     @include breakpoint(m) {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       margin-bottom: 1rem;
     }
   }
 
   &__content {
     padding: 1.5rem;
+    font-size: 1rem;
     line-height: 1.5;
-    font-size: 0.9rem;
+    letter-spacing: 0.03em;
 
     @include breakpoint(m) {
       padding: 2rem;
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
   }
 
@@ -164,7 +165,6 @@ export default {
   &__language {
     color: $color-text-secondary;
     flex-grow: 1;
-    font-weight: 600;
     text-transform: uppercase;
   }
 

@@ -30,6 +30,8 @@ export default {
 <style lang="scss" scoped>
 .social-link {
   color: lighten($color-text-primary, 10%);
+  font-size: 1.2rem;
+  letter-spacing: 0.03em;
   margin-right: 2rem;
   transition: 100ms transform;
 
@@ -48,7 +50,7 @@ export default {
   }
 
   span {
-    font-weight: 600;
+    font-weight: 400;
   }
 
   svg {

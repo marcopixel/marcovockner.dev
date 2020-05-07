@@ -39,7 +39,7 @@ const head: NuxtConfigurationHead = {
     { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
     {
       rel: "stylesheet",
-      href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap",
+      href: "https://fonts.googleapis.com/css?family=Jost:400,600&display=swap",
     },
   ],
 }

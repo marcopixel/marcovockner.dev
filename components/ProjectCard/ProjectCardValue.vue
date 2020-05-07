@@ -34,11 +34,12 @@ export default {
   }
 
   &__icon {
-    margin-right: 0.6em;
+    font-size: 0.8em;
+    margin-right: 0.8em;
   }
 
   &__value {
-    font-weight: 600;
+    font-weight: 400;
   }
 }
 </style>
