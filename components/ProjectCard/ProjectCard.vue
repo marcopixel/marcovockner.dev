@@ -2,6 +2,7 @@
   a.project-card(:href="project.website")
     .project-card__image(v-if="project.preview")
       picture
+        source(:srcSet="require(`~/assets/${this.project.preview.src}?webp`)" type="image/webp")
         source(:srcSet="require(`~/assets/${this.project.preview.src}`)" type="image/jpeg")
         img(:src="require(`~/assets/${this.project.preview.src}`)" :alt="project.preview.alt" :style="position")
     .project-card__content
