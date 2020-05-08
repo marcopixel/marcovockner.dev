@@ -7,7 +7,7 @@ import styleResources from "./config/styleresources"
 import optimizedImages from "./config/optimizedImages"
 
 export default {
-  mode: "spa",
+  mode: "universal",
   head,
   buildModules,
   modules,
