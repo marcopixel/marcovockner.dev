@@ -1,7 +1,7 @@
 {
-  "name": "marcopixel.github.io",
+  "name": "marcovockner-website",
   "version": "1.0.0",
-  "description": "Personal website, built on Vue + Nuxt.js",
+  "description": "Personal website, built on Nuxt.js",
   "author": "Marco Vockner <marcopixel@live.de>",
   "license": "MIT",
   "private": true,
@@ -9,6 +9,7 @@
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
     "generate": "nuxt-ts generate",
+    "deploy": "nuxt-ts generate && gh-pages -d public",
     "start": "nuxt-ts start",
     "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
     "stylelint": "stylelint **/*.{vue,scss}",
