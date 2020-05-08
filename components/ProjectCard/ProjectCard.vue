@@ -1,6 +1,11 @@
 <template lang="pug">
   a.project-card(:href="project.website")
     .project-card__image(v-if="project.preview")
+      noscript
+        picture
+          source(:srcSet="require(`~/assets/${this.project.preview.src}?webp`)" type="image/webp")
+          source(:srcSet="require(`~/assets/${this.project.preview.src}`)" type="image/jpeg")
+          img(:src="require(`~/assets/${this.project.preview.src}`)" :alt="project.preview.alt" :style="position")
       picture
         source(:srcSet="require(`~/assets/${this.project.preview.src}?webp`)" type="image/webp")
         source(:srcSet="require(`~/assets/${this.project.preview.src}`)" type="image/jpeg")
@@ -133,6 +138,12 @@ export default {
         height: auto;
         min-height: 100%;
         transform: translate(-50%, -50%);
+      }
+    }
+
+    noscript {
+      img {
+        opacity: 1 !important;
       }
     }
   }
