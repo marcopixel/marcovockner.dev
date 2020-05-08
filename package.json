@@ -9,7 +9,7 @@
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
     "generate": "nuxt-ts generate",
-    "deploy": "nuxt-ts generate && gh-pages -d dist",
+    "deploy": "nuxt-ts generate && gh-pages --dist ./dist --dotfiles",
     "start": "nuxt-ts start",
     "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
     "stylelint": "stylelint **/*.{vue,scss}",
