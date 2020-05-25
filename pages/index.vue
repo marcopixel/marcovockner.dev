@@ -46,7 +46,7 @@ export default {
 
       @include breakpoint(l) {
         position: fixed;
-        width: 40%;
+        width: 45%;
         height: 100%;
         padding-top: 5rem;
         padding-bottom: 5rem;
@@ -62,7 +62,7 @@ export default {
 
       @include breakpoint(l) {
         position: absolute;
-        width: 60%;
+        width: 55%;
         right: 0;
         padding: 5rem 3rem;
       }
