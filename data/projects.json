@@ -4,7 +4,7 @@
     "name": "r6operators",
     "description": "r6operators is a collection of high-quality vectorized Rainbow Six: Siege operator icons & metadata for Node.js",
     "website": "https://r6operators.marcopixel.eu/",
-    "language": "Typescript + React",
+    "language": "Typescript + Vue 3 + Vite",
     "github": {
       "owner": "marcopixel",
       "repo": "r6operators"
