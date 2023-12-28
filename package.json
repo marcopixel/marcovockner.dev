@@ -46,7 +46,7 @@
     "normalize.css": "^8.0.1",
     "nuxt-lazy-load": "^1.2.2",
     "prettier": "^2.0.4",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "pug-plain-loader": "^1.0.0",
     "stylelint": "^13.3.3",
     "stylelint-config-prettier": "^8.0.1",
